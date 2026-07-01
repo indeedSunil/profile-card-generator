@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+
 import 'package:profile_card_generator/screens/home_screen/widgets/quick_action.dart';
-import 'package:profile_card_generator/universal/widgets/button.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -17,7 +17,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       key: globalKey,
       backgroundColor: Color(0xffF5F8FE),
-      appBar: AppBar(
+ appBar: AppBar(
         leading: IconButton(
           onPressed: () {
             globalKey.currentState?.openDrawer();
@@ -39,7 +39,7 @@ class _HomeScreenState extends State<HomeScreen> {
       body: ListView(
         padding: EdgeInsets.symmetric(horizontal: 15),
         children: [
-          SizedBox(height: 30),
+          SizedBox(height: 15),
           Text.rich(
             TextSpan(
               style: TextStyle(
@@ -137,7 +137,6 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ],
       ),
-    
     );
   }
 }
