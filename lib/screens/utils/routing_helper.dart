@@ -25,6 +25,7 @@ class _RoutingHelperState extends State<RoutingHelper> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: screens[_currentIndex],
+      
       bottomNavigationBar: NavigationBar(
         onDestinationSelected: (value) => {
           setState(() {

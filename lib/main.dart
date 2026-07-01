@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:profile_card_generator/screens/utils/route_generator.dart';
 
 import 'package:profile_card_generator/screens/utils/routing_helper.dart';
 import 'package:profile_card_generator/test.dart';
@@ -15,6 +16,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: RoutingHelper(),
       debugShowCheckedModeBanner: false,
+      initialRoute: '/',
+      onGenerateRoute: RouteGenerator.generateRoute
     );
   }
 }
