@@ -93,6 +93,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
               children: [
                 QuickAction(
+                    route: '/create',
                   color: Color(0xff2DD4BF),
                   icon: Icon(
                     Icons.add_circle_outlined,
@@ -103,6 +104,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   subText: "Create a new card from scratch",
                 ),
                 QuickAction(
+                    route: '/view',
                   color: Color(0xff64A8FE),
                   icon: Icon(
                     Icons.remove_red_eye,
@@ -113,6 +115,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   subText: "Preview your saved identities",
                 ),
                 QuickAction(
+                    route: '/edit',
                   color: Color(0xffB4C1B9),
                   icon: Icon(
                     Icons.edit_note_outlined,
@@ -123,6 +126,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   subText: "Update details and card themes",
                 ),
                 QuickAction(
+                    route: '/share',
                   color: Color(0xffD3E4FE),
                   icon: Icon(
                     Icons.offline_share_rounded,
