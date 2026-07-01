@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:profile_card_generator/screens/home_screen/home_screen.dart';
+
+import 'package:profile_card_generator/screens/utils/routing_helper.dart';
 import 'package:profile_card_generator/test.dart';
 
 void main() {
@@ -11,6 +12,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: HomeScreen(), debugShowCheckedModeBanner: false);
+    return MaterialApp(
+      home: RoutingHelper(),
+      debugShowCheckedModeBanner: false,
+    );
   }
 }
